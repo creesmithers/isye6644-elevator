@@ -1,0 +1,11 @@
+So far we have a shell of an elevator simulation written using the python simpy library. 
+
+We have a process to generate passengers that will use the elevator system with class passenger as described above. The generator assigns a pickup floor and destination floor 
+via random integer generation from 0 to the number of floors in the building. Additionally, it assigns a passenger id to the newly created passenger incrementing the id by 1 for each 
+new passenger that gets created throughout the simulation. 
+
+Next we have an elevator class that has a log, request pickup, and run methods. Inside the run method we can handle picking passengers up, dropping them off, and controling the direction that the elevator is moving. 
+
+The next feature(s) we plan to implement are more robust direction control logic so that the elevator can make decisions as to which direction to move in if there are several "requests" in the queue, enforecement of passenger limits in terms of the number of riders and weight limits, a feature to remove passengers from the queue if lines are too long (take the stairs), adding breakdowns / maintenance for elevators based on probability distribution, adding multiple cars, feature to capture simulation metrics like ride time - wait time - time in the system - busiest time periods - modifying the arrival rate throughout the run of the simulaiton.
+
+Group 42 - Justin Laue, Sameer Sawhney, Cree Smithers
